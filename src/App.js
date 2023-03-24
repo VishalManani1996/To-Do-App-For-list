@@ -70,6 +70,13 @@ class App extends React.Component{
   }
   updateInput(input){
     this.setState({newItem:input});
+
+  }
+  updateItem(id) {
+    const list = [...this.state.list];
+    const item = list.find((item) => item.id === id);
+    item.isDone = !item.isDone;
+    this.setState({ list });
   }
   render(){
     return(
@@ -98,7 +105,7 @@ class App extends React.Component{
                     type="checkbox"
                     name="idDone"
                     checked={item.isDone}
-                    onChange={() =>{}}/>
+                    onChange={() =>this.updateItem(item.id)}/>
                     {item.value}
                     <button 
                     className="btn"
@@ -106,8 +113,8 @@ class App extends React.Component{
                   </li>
                 );
               })}
-              <li>
-                <input type="checkbox" name="" id=""/>
+              <li className="list li">
+                <input type="checkbox" className="list li input"/>
                 Record YouTube Videos
                 <button className="btn">Delete</button>
               </li>
