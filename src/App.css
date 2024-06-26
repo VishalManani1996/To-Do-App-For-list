@@ -11,7 +11,7 @@ body {
 }
 /* CSS for buttons */
 button {
-  background-color: #2196F3; /* Blue */
+  background-color: #2196f3; /* Blue */
   color: white;
   padding: 10px 20px;
   border: none;
@@ -61,7 +61,7 @@ button:disabled {
 
 .input-text:focus {
   outline: none;
-  border-color: #2196F3; /* Blue */
+  border-color: #2196f3; /* Blue */
 }
 
 /* CSS for list items */
@@ -85,23 +85,6 @@ button:disabled {
 .list li .btn:hover {
   background-color: #d32f2f; /* Darker red */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* .App {
   text-align: center;
